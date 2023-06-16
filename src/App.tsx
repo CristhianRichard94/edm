@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+import GenreList from './genre-list/GenreList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <GenreList />
+      <div className="footer">
+        <span>Made with ❤️ by Cristhian Richard</span>
+        <a target="_blank" href="https://crichard-cv.firebaseapp.com/">
+          About me
         </a>
-      </header>
+      </div>
     </div>
   );
 }
