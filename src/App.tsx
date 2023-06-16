@@ -8,7 +8,11 @@ function App() {
       <GenreList />
       <div className="footer">
         <span>Made with ❤️ by Cristhian Richard</span>
-        <a target="_blank" href="https://crichard-cv.firebaseapp.com/">
+        <a
+          target="_blank"
+          href="https://crichard-cv.firebaseapp.com/"
+          rel="noreferrer"
+        >
           About me
         </a>
       </div>
