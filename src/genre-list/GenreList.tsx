@@ -1,7 +1,7 @@
-import './GenreList.scss';
+import "./GenreList.scss";
 
-import { SubGenre } from '../data/interface';
-import subgenreList from './subGenreList';
+import { SubGenre } from "../data/interface";
+import subgenreList from "./subGenreList";
 
 function GenreList() {
   function renderSubGenre(subGenre: SubGenre) {
@@ -14,7 +14,7 @@ function GenreList() {
           <p className="description">{subGenre.description}</p>
           <p className="description">
             Some Artists:
-            {subGenre.artists.reduce((curr, acc) => acc + ', ' + curr, ' ')}
+            {subGenre.artists.reduce((curr, acc) => acc + ", " + curr, " ")}
           </p>
         </div>
         <div className="player">
@@ -22,7 +22,7 @@ function GenreList() {
             title={subGenre.name}
             src={subGenre.playlist}
             width="100%"
-            height="552"
+            height="360"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           ></iframe>
@@ -32,7 +32,7 @@ function GenreList() {
   }
 
   return (
-    <div className="App">
+    <div className="genre-list">
       {subgenreList.map((subgenre) => renderSubGenre(subgenre))}
     </div>
   );
