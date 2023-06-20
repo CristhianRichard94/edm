@@ -33,7 +33,9 @@ function App() {
           This is simple website that describes the different electronic
           subgenres ordered by beats per minute (bpm).
         </p>
-        <p className="paragraph-2">The information was extracted by ChatGPT.</p>
+        <p className="paragraph-2">
+          The information was extracted from ChatGPT.
+        </p>
         <p className="paragraph-3">No copyrights intended.</p>
       </div>
       <GenreList />
