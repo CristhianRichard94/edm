@@ -1,4 +1,4 @@
-import { Ref } from "react";
+
 import { Spotify } from "react-spotify-embed";
 import { SubGenre } from "../data/interface";
 
