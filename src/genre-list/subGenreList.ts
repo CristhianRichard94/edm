@@ -14,7 +14,7 @@ const electronicMusicSubgenres: Array<SubGenre> = [
       "Zero 7",
     ],
     playlist:
-      "https://open.spotify.com/embed/playlist/37i9dQZF1EIetaOvb0yaXt?utm_source=generator",
+      "https://open.spotify.com/playlist/37i9dQZF1EIetaOvb0yaXt?utm_source=generator",
   },
   {
     name: "Trip-Hop",
@@ -29,7 +29,7 @@ const electronicMusicSubgenres: Array<SubGenre> = [
       "DJ Shadow",
     ],
     playlist:
-      "https://open.spotify.com/embed/playlist/37i9dQZF1DWVXbA4kjkg6G?utm_source=generator",
+      "https://open.spotify.com/playlist/37i9dQZF1DWVXbA4kjkg6G?utm_source=generator",
   },
 
   {
@@ -45,7 +45,7 @@ const electronicMusicSubgenres: Array<SubGenre> = [
       "Steve Roach",
     ],
     playlist:
-      "https://open.spotify.com/embed/playlist/7rg9hm19AsS6ecb80tUPPX?utm_source=generator",
+      "https://open.spotify.com/playlist/7rg9hm19AsS6ecb80tUPPX?utm_source=generator",
   },
 
   {
@@ -61,7 +61,7 @@ const electronicMusicSubgenres: Array<SubGenre> = [
       "Kerri Chandler",
     ],
     playlist:
-      "https://open.spotify.com/embed/playlist/6vDGVr652ztNWKZuHvsFvx?utm_source=generator",
+      "https://open.spotify.com/playlist/6vDGVr652ztNWKZuHvsFvx?utm_source=generator",
   },
 
   {
@@ -77,7 +77,7 @@ const electronicMusicSubgenres: Array<SubGenre> = [
       "Hot Since 82",
     ],
     playlist:
-      "https://open.spotify.com/embed/playlist/7nppx7uLgcmkZHg70HNfOk?utm_source=generator",
+      "https://open.spotify.com/playlist/7nppx7uLgcmkZHg70HNfOk?utm_source=generator",
   },
   {
     name: "Progressive House",
@@ -86,7 +86,7 @@ const electronicMusicSubgenres: Array<SubGenre> = [
       "Progressive House is characterized by a steady and driving beat with gradually evolving melodies and textures. It often incorporates long builds and breakdowns, creating a sense of progression throughout the track. Progressive House tracks can be uplifting and euphoric, featuring lush melodies, atmospheric layers, and emotive elements.",
     artists: ["Deadmau5", "Eric Prydz", "Sasha"],
     playlist:
-      "https://open.spotify.com/embed/playlist/37i9dQZF1EIfwlfJi9BTMY?utm_source=generator",
+      "https://open.spotify.com/playlist/37i9dQZF1EIfwlfJi9BTMY?utm_source=generator",
   },
   {
     name: "Trance",
@@ -95,7 +95,7 @@ const electronicMusicSubgenres: Array<SubGenre> = [
       "Trance music is known for its energetic and uplifting melodies. It is characterized by a fast tempo, pulsating beats, and a focus on driving rhythms. Trance tracks often include long breakdowns, epic builds, and euphoric climaxes. The genre aims to create a sense of transcendence and emotional connection on the dancefloor.",
     artists: ["Armin van Buuren", "Above & Beyond", "Paul van Dyk"],
     playlist:
-      "https://open.spotify.com/embed/playlist/0Q3ugz23LAXFg2PvXJ8hMx?utm_source=generator",
+      "https://open.spotify.com/playlist/0Q3ugz23LAXFg2PvXJ8hMx?utm_source=generator",
   },
 
   {
@@ -105,7 +105,7 @@ const electronicMusicSubgenres: Array<SubGenre> = [
       "Techno is a genre known for its repetitive beats, driving rhythm, and dark and industrial soundscapes. It typically features a fast tempo and emphasizes the use of electronic instruments and synthesizers. Techno tracks often create a hypnotic and immersive experience with its relentless energy and immersive atmosphere.",
     artists: ["Carl Cox", "Adam Beyer", "Nina Kraviz"],
     playlist:
-      "https://open.spotify.com/embed/playlist/37i9dQZF1DX6J5NfMJS675?utm_source=generator",
+      "https://open.spotify.com/playlist/37i9dQZF1DX6J5NfMJS675?utm_source=generator",
   },
   {
     name: "Drum and Bass",
@@ -114,7 +114,7 @@ const electronicMusicSubgenres: Array<SubGenre> = [
       "Combines fast-paced breakbeats with heavy basslines, high-energy tempo, intricate rhythms, and complex percussion patterns.",
     artists: ["Pendulum", "Noisia", "Sub Focus"],
     playlist:
-      "https://open.spotify.com/embed/playlist/0Zarq4BVkFkZOWkmqsfrjA?utm_source=generator",
+      "https://open.spotify.com/playlist/0Zarq4BVkFkZOWkmqsfrjA?utm_source=generator",
   },
   {
     name: "Hardcore",
@@ -123,7 +123,7 @@ const electronicMusicSubgenres: Array<SubGenre> = [
       "Intense and aggressive genre with fast and heavy beats, distorted sounds, high energy, and a relentless tempo.",
     artists: ["Angerfist", "DJ Mad Dog", "Nosferatu"],
     playlist:
-      "https://open.spotify.com/embed/playlist/4JX8czVXDcs5dqbMo4xQGR?utm_source=generator",
+      "https://open.spotify.com/playlist/4JX8czVXDcs5dqbMo4xQGR?utm_source=generator",
   },
 ];
 

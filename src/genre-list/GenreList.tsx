@@ -1,39 +1,45 @@
 import "./GenreList.scss";
 
-import { SubGenre } from "../data/interface";
 import subgenreList from "./subGenreList";
+import { Suspense, lazy } from "react";
+const SubGenreComponent = lazy(() => import("./SubGenreComponent"));
 
 function GenreList() {
-  function renderSubGenre(subGenre: SubGenre) {
-    return (
-      <div className="subgenre" key={subGenre.name}>
-        <div className="body">
-          <h2 className="title">
-            {subGenre.name} <span className="bpm">({subGenre.bpmRange})</span>
-          </h2>
-          <p className="description">{subGenre.description}</p>
-          <p className="description">
-            Some Artists:
-            {subGenre.artists.reduce((curr, acc) => acc + ", " + curr, " ")}
-          </p>
-        </div>
-        <div className="player">
-          <iframe
-            title={subGenre.name}
-            src={subGenre.playlist}
-            width="100%"
-            height="360"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
-        </div>
-      </div>
-    );
-  }
+  // const [activePlayerIndex, setActivePlayerIndex] = useState(-1);
+  // const [players, setPlayers] = useState(
+  //   [] as Array<EventSource | MessageEventSource | null>
+  // );
+  // useEffect(() => {
+  //   window.addEventListener("message", (event) => {
+  //     if (event.origin === "https://open.spotify.com") {
+  //       if (event.data.type === "ready") {
+  //         players.push(event.source);
+  //         setPlayers(Array.from(new Set(players)));
+  //       }
+
+  //       if (event.data.type === "playback_update") {
+  //         const index = players.findIndex((player) => player === event.source);
+  //         if (index !== activePlayerIndex) {
+  //           if (index >= 0 && !event.data.payload.isPaused) {
+  //             (players[activePlayerIndex] as Window)?.postMessage(
+  //               { command: "toggle" },
+  //               "*"
+  //             );
+  //           }
+  //           setActivePlayerIndex(index);
+  //         }
+  //       }
+  //     }
+  //   });
+  // }, []);
 
   return (
     <div className="genre-list">
-      {subgenreList.map((subgenre) => renderSubGenre(subgenre))}
+      {subgenreList.map((subgenre) => (
+        <Suspense fallback={<div>Loading...</div>} key={subgenre.name}>
+          <SubGenreComponent subGenre={subgenre} key={subgenre.name} />
+        </Suspense>
+      ))}
     </div>
   );
 }
