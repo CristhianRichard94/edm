@@ -1,0 +1,43 @@
+.artist {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover .artist__tooltip {
+    opacity: 1;
+  }
+
+  &__link {
+    text-decoration: none;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+
+  &__image {
+    overflow-y: hidden;
+    position: absolute;
+
+    &--portrait {
+      width: 100%;
+    }
+    &--landscape {
+      height: 100%;
+    }
+  }
+
+  &__tooltip {
+    position: absolute;
+    opacity: 0;
+    transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    bottom: -5px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: white;
+    background-color: #202124aa;
+    text-align: center;
+  }
+}

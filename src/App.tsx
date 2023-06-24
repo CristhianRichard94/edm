@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./App.scss";
 
-import GenreList from "./genre-list/GenreList";
+import GenreList from "./components/genre-list/GenreList";
 
 function App() {
   useEffect(() => {

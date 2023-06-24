@@ -39,7 +39,7 @@
     }
 
     .description {
-      width: 50%;
+      width: 90%;
     }
   }
 
@@ -61,5 +61,12 @@
     iframe {
       border: none;
     }
+  }
+
+  .artists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
   }
 }

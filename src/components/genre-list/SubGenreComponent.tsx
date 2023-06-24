@@ -1,6 +1,6 @@
-
 import { Spotify } from "react-spotify-embed";
-import { SubGenre } from "../data/interface";
+import { SubGenre } from "../../data/interface";
+import ArtistComponent from "../artist/ArtistComponent";
 
 function SubGenreComponent({ subGenre }: { subGenre: SubGenre }) {
   return (
@@ -10,10 +10,12 @@ function SubGenreComponent({ subGenre }: { subGenre: SubGenre }) {
           {subGenre.name} <span className="bpm">({subGenre.bpmRange})</span>
         </h2>
         <p className="description">{subGenre.description}</p>
-        <p className="description">
-          Some Artists:
-          {subGenre.artists.reduce((curr, acc) => acc + ", " + curr, " ")}
-        </p>
+        <p className="description">Some Artists:</p>
+        <div className="artists">
+          {subGenre.artists.map((artist) => (
+            <ArtistComponent artist={artist} key={artist.name} />
+          ))}
+        </div>
       </div>
       <div className="player">
         <Spotify
